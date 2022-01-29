@@ -38,7 +38,7 @@ export default {
   vuems: {
     required: ['@example/core'],
     modules: {
-      local: ['@example/core', '@example/about'],
+      local: ['@example/core', '@example/about', '@example/shapes'],
       npm: [],
     },
   },

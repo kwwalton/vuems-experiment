@@ -3,6 +3,7 @@
     <ul>
       <li><NuxtLink class="button--green" to="/">Home page</NuxtLink></li>
       <li><NuxtLink class="button--grey" to="/about">About</NuxtLink></li>
+      <li><NuxtLink class="button--grey" to="/shapes">Shapes</NuxtLink></li>
     </ul>
   </nav>
 </template>

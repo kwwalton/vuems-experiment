@@ -1,19 +1,17 @@
 <template>
   <CoreWrapper>
-    <h1 class="title">About</h1>
-    <About />
+    <h1 class="title">{{ $route.params.id }}</h1>
+    <nuxt-link to="/shapes">Shapes</nuxt-link>
   </CoreWrapper>
 </template>
 
 <script>
 import CoreWrapper from '@Core/components/CoreWrapper'
-import About from '@About/components/About'
 
 export default {
-  name: 'AboutPage',
+  name: 'Shape',
   components: {
     CoreWrapper,
-    About,
   },
 }
 </script>
