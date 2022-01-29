@@ -1,0 +1,9 @@
+{
+  "name": "@example/about",
+  "version": "0.1.0",
+  "description": "Example about module",
+  "main": "src/index.js",
+  "files": [
+    "src/*"
+  ]
+}

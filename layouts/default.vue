@@ -1,8 +1,16 @@
 <template>
-  <div>
-    <TheHeader />
-    <TheNavigation />
+  <DefaultLayout>
     <Nuxt />
-    <TheFooter />
-  </div>
+  </DefaultLayout>
 </template>
+
+<script>
+import DefaultLayout from '@Core/layouts/default'
+
+export default {
+  name: 'NuxtDefaultLayout',
+  components: {
+    DefaultLayout,
+  },
+}
+</script>

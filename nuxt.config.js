@@ -29,7 +29,19 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    // VueMS
+    '@ergonode/vuems',
+    // Nuxt Router - disables pages directory
+    '@nuxtjs/router',
   ],
+
+  vuems: {
+    required: ['@example/core'],
+    modules: {
+      local: ['@example/core', '@example/about'],
+      npm: [],
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
