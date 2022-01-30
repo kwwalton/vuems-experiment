@@ -5,5 +5,10 @@ export default {
     '@Core': '/',
   },
   relations: [],
-  plugins: [],
+  plugins: [
+    {
+      ssr: true,
+      src: './plugins/axios',
+    },
+  ],
 }

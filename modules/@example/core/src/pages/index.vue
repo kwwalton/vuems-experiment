@@ -1,6 +1,8 @@
 <template>
   <CoreWrapper>
     <h1 class="title">VueMS-demo</h1>
+    <button @click="axiosTest">axiosTest</button>
+    <p v-if="apiResponse">{{ apiResponse }}</p>
   </CoreWrapper>
 </template>
 
@@ -11,6 +13,26 @@ export default {
   name: 'IndexPage',
   components: {
     CoreWrapper,
+  },
+  data() {
+    return {
+      apiResponse: '',
+    }
+  },
+  methods: {
+    axiosTest() {
+      this.$axios
+        .get('https://jsonplaceholder.typicode.com/todos/1')
+        .then((res) => {
+          // eslint-disable-next-line no-console
+          console.log(res)
+          this.apiResponse = res.data.title
+        })
+        .catch((err) => {
+          // eslint-disable-next-line no-console
+          console.log(err)
+        })
+    },
   },
 }
 </script>
